@@ -1,18 +1,23 @@
+
+/*
 document.getElementById('uploadForm').addEventListener('submit', function(event) {
+*/
+
+function upload(){
         event.preventDefault();
         const formData = new FormData(this);
-
+        console.log("test")
         fetch('/upload', {
             method: 'POST',
             body: formData
         })
         .then(response => {
-            if (response.ok) {
-                return response.text();
+            if (!response.ok) {
+            throw new Error(Network response was not ok ' + response.statusText);
             }
-            throw new Error('File upload failed');
         })
         .then(data => {
+            console.log("TEST")
             document.getElementById('response').innerText = 'Upload successful: ' + data;
         })
         .catch(error => {

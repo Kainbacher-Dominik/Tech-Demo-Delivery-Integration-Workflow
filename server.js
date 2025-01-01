@@ -5,13 +5,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Set up storage using multer
+// Set up storage using multer*
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
+  destination:  (req, file, cb) => {
     cb(null, 'uploads/');
   },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + path.extname(file.originalname));
+  filename:  (req, file, cb) => {
+    cb(null, file.originalname);
   },
 });
 
@@ -28,8 +28,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
     if (!data || !data.filename) {
             return res.status(400).json({ error: 'Name is required' });
         }
-    res.status(200)
-    res.send('File uploaded successfully: ' + req.file.filename);
+    res.status(200).send('File uploaded successfully: ' + data.originalname);
 });
 
 // Create uploads directory if it doesn't exist
