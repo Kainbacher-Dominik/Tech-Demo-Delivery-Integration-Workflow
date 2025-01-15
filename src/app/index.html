@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Download</title>
+</head>
+<body>
+<h1>Upload a File</h1>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Upload</button>
+</form>
+
+<h2>Available Files</h2>
+<ul id="fileList"></ul>
+
+<script>
+    // Fetch the list of files and display them
+    fetch('/files')
+        .then(response => response.json())
+        .then(files => {
+            const fileList = document.getElementById('fileList');
+            files.forEach(file => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<a href="/download/${file}">${file}</a>`;
+                fileList.appendChild(listItem);
+            });
+        });
+</script>
+</body>
+</html>

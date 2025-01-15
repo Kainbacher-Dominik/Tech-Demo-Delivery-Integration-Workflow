@@ -38,6 +38,37 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
+// Serve a file for download
+app.get('/download/:filename', (req, res) => {
+    const filename = req.params.filename;
+    const filePath = path.join(__dirname, 'uploads', filename);
+
+    // Check if the file exists
+    fs.access(filePath, fs.constants.F_OK, (err) => {
+        if (err) {
+            return res.status(404).send('File not found');
+        }
+
+        // Set headers for download
+        res.download(filePath, (err) => {
+            if (err) {
+                res.status(500).send('Error downloading file');
+            }
+        });
+    });
+});
+
+// List all files in the uploads directory
+app.get('/files', (req, res) => {
+    fs.readdir('./uploads', (err, files) => {
+        if (err) {
+            return res.status(500).send('Unable to scan directory: ' + err);
+        }
+        res.json(files);
+    });
+});
+
+
 // Start the server
 const server = app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
