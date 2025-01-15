@@ -17,7 +17,6 @@ function upload(){
             }
         })
         .then(data => {
-            console.log("TEST")
             document.getElementById('response').innerText = 'Upload successful: ' + data;
         })
         .catch(error => {
