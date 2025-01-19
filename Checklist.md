@@ -19,9 +19,9 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 ## Checkliste für die eigene fortlaufende Übung / TechDemo in Continuous Delivery
 
 ### Einführung und Grundlagen
-- [ ] Verständnis von Continuous Delivery und dessen Bedeutung
-- [ ] Unterschiede zwischen Continuous Integration, Continuous Delivery und Continuous Deployment
-- [ ] CI-Anti Pattern identifizieren
+- [x] Verständnis von Continuous Delivery und dessen Bedeutung
+- [x] Unterschiede zwischen Continuous Integration, Continuous Delivery und Continuous Deployment
+- [x] CI-Anti Pattern identifizieren
 
 ### 20% Projekt Setup
 - [x] Initialisierung des Repository (Git) -> (Blank Project + Project Name = nachname)
@@ -35,7 +35,7 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 - [x] Automatisierte Builds eingerichtet
 - [x] Automatisierte Tests implementiert
 - [ ] Automatisierte Deployments konfiguriert
-- [ ] Automatisierte Code-Qualitätsanalyse: Setze statische Code-Analyse-Tools ein, um Codequalität automatisiert zu überprüfen.
+- [x] Automatisierte Code-Qualitätsanalyse: Setze statische Code-Analyse-Tools ein, um Codequalität automatisiert zu überprüfen.
 
 ### 10% Testing
 - [x] (Unit) Tests geschrieben und automatisiert
