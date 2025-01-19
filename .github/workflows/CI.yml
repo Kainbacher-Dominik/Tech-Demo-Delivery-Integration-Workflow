@@ -20,4 +20,5 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y docker-compose
       - run: docker-compose up -d
+      - run: npm test
       - run: docker-compose down
