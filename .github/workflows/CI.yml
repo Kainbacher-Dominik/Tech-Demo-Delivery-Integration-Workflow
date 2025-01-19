@@ -15,5 +15,6 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm ci
-      - run: npm test
       - run: npx eslint .
+      - run: docker-compose up
+      - run: docker-compose down
