@@ -18,11 +18,15 @@ Simple application zur hochladen von daten von dem Client zu den server und von 
 
 # Deployment
 Recreate Deployment
+
 Alte Version stoppen: Zuerst wird die alte Version gestoppt.
+
 Neue Version starten: Danach wird die neue Version gestartet.
 
 Einfaches deployment 
-Kann zu Downtown fueren 
+
+Kann zu Downtime fueren 
+
 Downtown kann bei der kleinen application verkrafted werden
 
 # CI Pipeline 
