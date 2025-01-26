@@ -27,8 +27,8 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 - [x] Initialisierung des Repository (Git) -> (Blank Project + Project Name = nachname)
 - [x] Checkliste kopieren und in neues geklontes Repository/project einfügen
 - [x] Checkliste versionieren
-- [ ] README anfertigen mit Verlinkungen, Hinweisen, etc. zum Inhalt des Repository
-- [ ] zweites Repository für Übungen, Ausprobieren, etc. inkl. README sowie Verlinkungen und Übersicht zu den Übungen
+- [x] README anfertigen mit Verlinkungen, Hinweisen, etc. zum Inhalt des Repository
+- [x] zweites Repository für Übungen, Ausprobieren, etc. inkl. README sowie Verlinkungen und Übersicht zu den Übungen
 - [x] .gitignore angepasst: Stelle sicher, dass unnötige Dateien nicht im Repository landen (z. B. durch ein angepasstes .gitignore-File).
 
 ### 10% Automatisierung
@@ -43,7 +43,7 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 - [ ] End-to-End Tests eingerichtet (optional)
 
 ### Deployment-Strategien
-- [ ] Deployment-Strategien identifizieren
+- [x] Deployment-Strategien identifizieren
 - [ ] Rollback-Strategien (optional)
 
 ### 10% Containerisierung
@@ -68,4 +68,4 @@ Es wird dringend empfohlen, diese Checkliste in Ihr eigenes Projekt-Repository z
 - [ ] Projekt-Dokumentation vervollständigt
 - [ ] Branching-Strategie dokumentieren: Definiere eine Branching-Strategie (z. B. GitFlow) und dokumentiere die Entscheidungsfindung.
 - [ ] Pipeline-Dokumentation: Erstelle eine vollständige technische Dokumentation deiner CI/CD-Pipeline, einschließlich aller verwendeten Tools, Skripte und Konfigurationen.
-- [ ] Build Pipeline spezifizieren: Stelle sicher, dass alle Schritte der CI/CD-Pipeline klar definiert sind, inklusive Test-, Build- und Deployment-Schritte.
+- [x] Build Pipeline spezifizieren: Stelle sicher, dass alle Schritte der CI/CD-Pipeline klar definiert sind, inklusive Test-, Build- und Deployment-Schritte.
