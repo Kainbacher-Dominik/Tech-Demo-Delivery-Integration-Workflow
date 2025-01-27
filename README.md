@@ -39,19 +39,19 @@ Die CI Pipeline ist mit GitHub Actionen implementiert
 Wenn Aenderungen Gepushed weren wird ein npm test in einen docker container ausgefuert      
 uses Test.yml to do the testing
 
+First sets up Envirnment in docker      
+Runs all tests in docker container
+
+## Containerisierung
+In Docker using Dockerfile um 
+
+Benutzt Dockerfile um work directory festzulegen application zu instalieren tests auszufueren 
+docker-compose um das starten von docker zu definieren und besitzt pipelines um port der dockerfile weiterzuleiten
+
+## Konfigurationsdateien versioniert
+Package.json and DockerFiles sind versioniert
+Envirment Variables nicht im git    
+DockerHub login daten in git hub secrets
 
 ## IAC
 Infrastucture as Code ist nicht vorhanden weil probleme mit Terraform authentication aufgetreden sind
-
-## Konfigurationsdateien versioniert
-Package.json and DockerFiles sind versioniert 
-
-## Konfigurationsdateien ausgenommen
-Envirment Variables nicht im git
-
-## Containerisierung
-In Docker 
-
-Benutzt Dockerfile and docker-compose
-
-## 
