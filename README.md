@@ -49,10 +49,13 @@ Deployment.yml Logged sich bei Docker Hub ein mit den login daten die in github 
 danach Bereitet es docker for und builded die docker compose file
 und zuletzt pushed das erstellt docker image auf dockerhub.
 
-## Konfigurationsdateien versioniert
+## Konfigurationsdateien
 Package.json and DockerFiles sind versioniert
 Envirment Variables nicht im git    
 DockerHub login daten in git hub secrets
+
+## Sicherheitsüberprüfungen
+Fuert test aus um zu testen das die Groeszte sicherheitsluecke abgedeckt ist bei versuchen codedataien hochzuladen
 
 ## IAC
 Infrastucture as Code ist nicht vorhanden weil probleme mit Terraform authentication aufgetreden sind
