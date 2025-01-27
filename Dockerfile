@@ -12,6 +12,7 @@ RUN mkdir -p uploads
 
 EXPOSE 3000
 
+RUN npm test
+
 CMD ["node","src/app/server.js"]
 
-RUN npm test
