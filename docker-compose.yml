@@ -11,13 +11,6 @@ services:
       - .:/scr/app
       - uploads:/uploads
 
-  test:
-    build: .
-    volumes:
-      - .:/src/app
-    command: npm test
-    environment:
-      NODE_ENV: test
 
 
 volumes:
