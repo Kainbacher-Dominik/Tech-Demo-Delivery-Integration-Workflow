@@ -53,6 +53,7 @@ In Docker
 Benutzt Dockerfile and docker-compose
 
 ## Deployment 
+Using Docker Hub
 
 ## Branching
 Each feacher gerts its own branch in github
