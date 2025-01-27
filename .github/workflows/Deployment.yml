@@ -1,6 +1,10 @@
 name: Deployment
 
-on: [push]
+on:
+  workflow_run:
+    workflows: [ "Build" ]
+    types:
+        - completed
 
 jobs:
   build:
