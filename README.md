@@ -42,6 +42,10 @@ docker-compose um das starten von docker zu definieren und besitzt pipelines um 
 ## Build 
 Build macht einen Clean Install fuer npm und fuert ein npx eslint aus
 
+## Deployment
+Deploys auf dockerhub zur einfeicher verfuegungs stellung von docker image mit Deployment.yml       
+
+
 ## Konfigurationsdateien versioniert
 Package.json and DockerFiles sind versioniert
 Envirment Variables nicht im git    
