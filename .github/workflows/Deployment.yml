@@ -27,7 +27,7 @@ jobs:
 
       - name: Push Docker images to Docker Hub
         run: |
-          docker push your-dockerhub-username/your-image-name:latest
+          docker push d19c11/image-upload-download:latest
 
       - name: Deploy to Docker Hub
         run: |
