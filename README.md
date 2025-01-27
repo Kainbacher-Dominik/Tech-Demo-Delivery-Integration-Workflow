@@ -45,6 +45,9 @@ Build macht einen Clean Install fuer npm und fuert ein npx eslint aus
 ## Deployment
 Deploys auf dockerhub zur einfeicher verfuegungs stellung von docker image mit Deployment.yml       
 
+Deployment.yml Logged sich bei Docker Hub ein mit den login daten die in github secrets angegeben sind  
+danach Bereitet es docker for und builded die docker compose file
+und zuletzt pushed das erstellt docker image auf dockerhub.
 
 ## Konfigurationsdateien versioniert
 Package.json and DockerFiles sind versioniert
