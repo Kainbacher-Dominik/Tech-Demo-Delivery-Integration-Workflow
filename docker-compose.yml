@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: d19c11/image-upload-download
     ports:
       - "3000:3000"
     volumes:
