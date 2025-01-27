@@ -6,31 +6,9 @@ https://github.com/Kainbacher-Dominik/workflow-automation
 # App 
 Simple application zur hochladen von daten von dem Client zu den server und von sever wieder herunterladen
 
-# Tests
-### should upload a file successfully
-    Tested ob Dateien erfolgreich hochgeladen wurde und in den definierten verzeichniss gespeichert wird
-
-### try upload without file
-    Tested ob eine fehlermeldung zurueck kommed wenn keine datei angegeben wird
-
-### should fetch the list of files
-    Tested das die Dataien in upload verzeichniss zum download uebergeben wird
-
-### should fail to upload a JS File
-    Tested den Datai filter indem es versucht eine JS datai hochzuladen 
-
-# Deployment
-Recreate Deployment
-
-Alte Version stoppen: Zuerst wird die alte Version gestoppt.  
-
-Neue Version starten: Danach wird die neue Version gestartet.  
-
-Einfaches deployment   
-
-Kann zu Downtime fueren   
-
-Downtown kann bei der kleinen application verkrafted werden  
+# Deployment Strategy
+Continues Delevery 
+Github action to deploy docker container auf DockerHub
 
 # CI Pipeline 
 Die CI Pipeline ist mit GitHub Actionen implementiert  
@@ -47,6 +25,22 @@ In Docker using Dockerfile um
 
 Benutzt Dockerfile um work directory festzulegen application zu instalieren tests auszufueren 
 docker-compose um das starten von docker zu definieren und besitzt pipelines um port der dockerfile weiterzuleiten
+
+## Tests
+### should upload a file successfully
+    Tested ob Dateien erfolgreich hochgeladen wurde und in den definierten verzeichniss gespeichert wird
+
+### try upload without file
+    Tested ob eine fehlermeldung zurueck kommed wenn keine datei angegeben wird
+
+### should fetch the list of files
+    Tested das die Dataien in upload verzeichniss zum download uebergeben wird
+
+### should fail to upload a JS File
+    Tested den Datai filter indem es versucht eine JS datai hochzuladen 
+
+## Build 
+Build macht einen Clean Install fuer npm und fuert ein npx eslint aus
 
 ## Konfigurationsdateien versioniert
 Package.json and DockerFiles sind versioniert
