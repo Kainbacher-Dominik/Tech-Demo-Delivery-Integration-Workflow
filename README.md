@@ -36,7 +36,9 @@ Downtown kann bei der kleinen application verkrafted werden
 Die CI Pipeline ist mit GitHub Actionen implementiert  
 
 ## Testing 
-Wenn Aenderungen Gepushed weren wird ein npm test in einen docker container ausgefuert
+Wenn Aenderungen Gepushed weren wird ein npm test in einen docker container ausgefuert      
+uses Test.yml to do the testing
+
 
 ## IAC
 Infrastucture as Code ist nicht vorhanden weil probleme mit Terraform authentication aufgetreden sind
